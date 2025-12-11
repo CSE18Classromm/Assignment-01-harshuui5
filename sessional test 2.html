@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive E-Commerce Cards</title>
+
+<style>
+
+  html, * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: black ;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: blue;
+    }
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+   
+    .card {
+        background:grey;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px ;
+        transition: transform 0.2s ease;
+    }
+
+    .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: red;
+    }
+
+    .card-price {
+        font-size: 16px;
+        color: blue;
+        margin-bottom: 15px;
+    }
+
+    .card button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    
+    }
+
+
+    
+    @media screen(max-width: 300px) {
+        .card-title {
+            font-size: 16px; }
+        .card-price {
+            font-size: 14px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<h1>be connected</h1>
+
+<div class="card-container">
+   
+    <div class="card">
+        <img src="put your image" alt="Product 1">
+        <div class="card-content">
+            <div class="card-title">Wireless Headphones</div>
+            <div class="card-price">&#8377;1400/-</div>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+   
+    <div class="card">
+        <img src="put your image" alt="Product 2">
+        <div class="card-content">
+            <div class="card-title">Smart Watch</div>
+            <div class="card-price">&#8377;30,000</div>
+            <button>Add to Cart</button>
+        </div>
+</div>
+
+</body>
+</html>
