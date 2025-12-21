@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram</title>
+  <style>
+   html, *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: #fafafa;
+}
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left{
+  font-family: 'Billabong', cursive;
+  font-size: 30px;
+}
+
+.navbar input{
+  padding: 5px;
+  width: 200px;
+}
+
+.nav-right span{
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+
+.main{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+
+.feed{
+  width: 500px;
+}
+
+.stories{
+  display: flex;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.story{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #c13584;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+.post{
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+}
+
+.post-header{
+  padding: 10px;
+}
+
+.post img{
+  width: 100%;
+}
+
+.post-actions{
+  padding: 10px;
+  font-size: 20px;
+}
+
+.post-caption{
+  padding: 10px;
+}
+
+
+.sidebar{
+  width: 300px;
+  margin-left: 30px;
+}
+
+.profile{
+  margin-bottom: 20px;
+}
+
+.profile p{
+  color: gray;
+}
+
+.suggestion{
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .main{
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar{
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+<header class="navbar">
+  <div class="nav-left">Instagram</div>
+  <input type="text" placeholder="Search">
+  <div class="nav-right">
+    <span>🏠</span>
+    <span>💬</span>
+    <span>➕</span>
+    <span>❤️</span>
+    <span>👤</span>
+  </div>
+</header>
+<div class="main">
+  <div class="feed">
+    <div class="stories">
+      <div class="story">Story</div>
+      <div class="story">user1</div>
+      <div class="story">User2</div>
+      <div class="story">User3</div>
+      <div class="story">User4</div>
+    </div>
+    <div class="post">
+      <div class="post-header">
+        <strong>harshrajawat.78</strong>
+      </div>
+      <img src="./harsh.jpeg" alt="post">
+      <div class="post-actions">
+        ❤️ 💬 📤
+      </div>
+      <div class="post-caption">
+        <strong>harshrajawat.78</strong> This is a sample Instagram post caption.
+      </div>
+    </div>
+    <div class="post">
+      <div class="post-header">
+        <strong>cr7</strong>
+      </div>
+      <img src="./cr7.jpg" alt="post">
+      <div class="post-actions">
+        ❤️ 💬 📤
+      </div>
+      <div class="post-caption">
+        <strong>cr7</strong> last goal of the season!
+      </div>
+    </div>
+  </div>
+  <div class="sidebar">
+    <div class="profile">
+      <strong>harshrajawat.78</strong>
+      <p>@harshrajawat.78</p>
+    </div>
+    <h4>Suggestions for you</h4>
+    <div class="suggestion">msd7</div>
+    <div class="suggestion">ro45</div>
+    <div class="suggestion">iambhuvi</div>
+  </div>
+</div>
+</body>
+</html>
