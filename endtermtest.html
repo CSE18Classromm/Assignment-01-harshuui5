@@ -1,0 +1,64 @@
+<!doctype html>
+<head>
+<title>Responsive navbar</title>
+<style>
+body{margin:0;
+font-family:ariel,sans-srief;
+}
+.navbar{
+display: flex;
+justify-content:space-between;
+align-items:center;
+background-color:black;
+padding:10px 20px;
+}
+.logo{
+color:aqua;
+font-size:15px;
+font-weight:bold;
+}
+.navlinks{ 
+     display:flex;
+     gap:15px;
+}
+.navlinks a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      transition: background 0.3s;
+    }
+.navlinks a:hover {
+      background-color: red;
+      border-radius: 4px;
+    }
+
+
+@media screen and (max-width :600px){
+.navbar{
+flex-direction:column;
+align-items:flex-start;
+}
+}
+@media screen and(max-width:600px){
+.navlinks{
+        flex-direction:column;
+        width:100%;}
+.navlinks a {
+        width: 100%;
+      }
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+ <div class="logo">NICE LOOK </div>
+<div class="navlinks">
+<a href="#">HOME</a>
+<a href="#">ABOUT</a>
+<a href="#">Service</a>
+<a href="#"> Contact</a>
+</div>
+</nav>
+
+</body>
+</html>
